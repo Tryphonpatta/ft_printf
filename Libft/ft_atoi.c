@@ -30,7 +30,7 @@ int	ft_atoi(char *str)
 	d = 0;
 	while (*str && check(*str))
 		str ++;
-	while (*str && (*str == '-' || *str == '+'))
+	if (*str && (*str == '-' || *str == '+'))
 	{
 		if (*str == '-')
 			d ++;
